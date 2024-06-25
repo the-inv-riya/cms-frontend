@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Management System</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- navbar section -->
+    <header class="header fixed-top">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a href="#home" class="logo">clinic<span><b>Care.</b></span></a>
+
+                <nav class="nav">
+                    <a href="#home">home</a>
+                    <a href="#about">about</a>
+                    <a href="#doctors">doctors</a>
+                    <a href="#services">services</a>
+                    <a href="#contact">contact</a>
+                </nav>
+
+                <a href="login.html" class="link-btn">log in</a>
+
+                <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- home page -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="row min-vh-100 align-items-center">
+                <div class="content text-center text-md-left">
+                    <h3>Care for Life</h3>
+                    <p>Hospitals provide critical and lifesaving medical care, offering a wide range of services to diagnose, treat, and manage various health conditions.</p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about us -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 image">
+                    <img src="image/about-us.jpg" class="w-100 mb-5 mb-md-0" alt="">
+                </div>
+
+                <div class="col-md-6 content">
+                    <span>about us</span>
+                    <h3>True HealthCare For Your Family</h3>
+                    <p>Hospitals offer a comprehensive range of healthcare services, including surgeries, imaging, laboratory tests, rehabilitation, and preventive care, addressing diverse medical needs.Hospitals operate round the clock, providing continuous medical care and emergency services, offering support and treatment whenever needed.</p>
+                    <a href="#contact" class="link-btn">make appointment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- doctors -->
+    <section class="doctors" id="doctors">
+        <h1 class="heading">Our doctors</h1>
+        <div class="box-container container">
+            <div class="box">
+                <img src="image/Dr._Siddhartha_Mukherjee.jpg" alt="">
+                <h3>Dr. Siddhartha Mukherjee</h3>
+                <p class="doctorsp">Anesthesiologist</p>
+            </div>
+            <div class="box">
+                <img src="image/Dr._Surbhi_Anand.jpg" alt="">
+                <h3>Dr. Surbhi Anand</h3>
+                <p class="doctorsp">Neurologist</p>
+            </div>
+            <div class="box">
+                <img src="image/Dr._Naresh_Trehan.jpg" alt="">
+                <h3>Dr. Naresh Trehan</h3>
+                <p class="doctorsp">Cardiologist</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="services" id="services">
+        <h1 class="heading">Our services</h1>
+        <div class="box-container container">
+            <div class="box">
+                <i class="fa-solid fa-stethoscope fa-2xl servicesicon"></i>
+                <h3>Anesthesiologists</h3>
+                <p>These doctors give you drugs to numb your pain or to put you under during surgery, childbirth, or other procedures. They monitor your vital signs while you’re under anesthesia.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-microscope fa-2xl fa-2xl servicesicon"></i>
+                <h3>Cardiologists</h3>
+                <p>They’re experts on the heart and blood vessels. You might see them for heart failure, a heart attack, high blood pressure, or an irregular heartbeat.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-capsules fa-2xl fa-2xl servicesicon"></i>
+                <h3>Emergency Medicine Specialists</h3>
+                <p>These doctors make life-or-death decisions for sick and injured people, usually in an emergency room. Their job is to save lives and to avoid or lower the chances of disability.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-lungs fa-2xl fa-2xl servicesicon"></i>
+                <h3>Neurologists</h3>
+                <p>These are specialists in the nervous system, which includes the brain, spinal cord, and nerves. They treat strokes, brain and spinal tumors, epilepsy, Parkinson's disease, and Alzheimer's disease.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-kit-medical fa-2xl servicesicon"></i>
+                <h3>Family Physician</h3>
+                <p>Family practice physicians are primary care providers who see patients of all ages and provide basic care for a variety of common ailments.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-syringe fa-2xl servicesicon"></i>
+                <h3>Orthopedist</h3>
+                <p>An orthopedist or orthopedic surgeon is a doctor who specializes in conditions of the musculoskeletal system, including the bones, muscles, joints, and connective tissues.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h1 class="heading">contact us</h1>
+        <form>
+            <span>your name :</span>
+            <input type="text" name="name" placeholder="enter your name" class="box" required>
+            <span>your email :</span>
+            <input type="email" name="email" placeholder="enter your email" class="box" required>
+            <span>your number :</span>
+            <input type="tel" name="contact" placeholder="enter your number" class="box" required>
+            <span>your message</span>
+            <textarea id="subject" name="message" placeholder="enter your message"></textarea>
+            <input type="submit" value="submit" name="submit" class="link-btn">
+        </form>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone number</h3>
+                <p>+123-456-7890</p>
+                <p>+111-444-7777</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our address</h3>
+                <p>ahemdabad, india - 363001</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>Opening hours</h3>
+                <p>00:07AM to 10:00PM</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email address</h3>
+                <p>patelnisarg378@gmail.com</p>
+                <p>riya.gyanwani777@gmail.com</p>
+                <p>saurabhjanishivamjani@gmail.com</p>
+                <p>krunaldholakia1@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="credit"><span>coding-pandas<br></span><span id="a">Team:-Krunal, Riya, Shivam, Nisarg</span> </div>
+
+    </section>
+
+</body>
+
+</html>

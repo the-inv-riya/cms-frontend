@@ -1,0 +1,56 @@
+:root {
+    --darkblue: #001861;
+    --nav: #7FC7D9;
+    --black: #333;
+    --white: #fff;
+    --light-grey: #DCDCDC;
+    --light-color: #666;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0, 0, 0, .1);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.login {
+    height: 80vh;
+}
+
+.login form {
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+.login form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.login form span {
+    font-size: 1.7rem;
+    color: var(--black);
+}
+
+.login form .radio {
+    display: flex;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.login form span a {
+    display: block;
+    margin-bottom: 10px;
+    color: var(--darkblue);
+}
+
+.login form span a:hover {
+    color: var(--light-color);
+}

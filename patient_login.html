@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login as Patient</title>
+    <link rel="shortcut icon" type="image/x-icon" href="image/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_login.css">
+    <style>
+        body {
+            background: #f0f2f0;
+            background: -webkit-linear-gradient(to bottom, var(--nav), #f0f2f0);
+            background: linear-gradient(to bottom, var(--nav), #f0f2f0);
+            background-size: cover;
+        }
+        .header {
+            border-bottom: none;
+            background-color: transparent;
+        }
+        .footer {
+            background-color: transparent;
+            border-top: var(--border);
+        }
+        .space {
+            display: flex;
+            gap: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar section -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <a href="index.html" class="logo">clinic<span><b>Care.</b></span></a>
+                <div class="space">
+                    <a href="index.html" class="link-btn">Home</a>                
+                    <a href="login.html" class="link-btn">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- login -->
+    <section class="login" id="login">
+        <h1 class="heading">Login as Patient</h1>
+        <form action="<?html echo $_SERVER['html_SELF']; ?>" method="post">
+            <span>Email :</span>
+            <input type="email" name="email" placeholder="enter your email" class="box" required>
+            <span>Password :</span>
+            <input type="password" name="password" placeholder="enter your password" class="box" required>
+            <span><a href="patient_reg.html">Don't have an account? Register Now</a></span>
+            <input type="submit" value="Login" name="submit" class="link-btn">
+        </form>
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="box-container container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone number</h3>
+                <p>+123-456-7890</p>
+                <p>+111-444-7777</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Our address</h3>
+                <p>ahemdabad, india - 363001</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-clock"></i>
+                <h3>Opening hours</h3>
+                <p>00:07AM to 10:00PM</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email address</h3>
+                <p>patelnisarg378@gmail.com</p>
+                <p>riya.gyanwani777@gmail.com</p>
+                <p>saurabhjanishivamjani@gmail.com</p>
+                <p>krunaldholakia1@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; copyright @ <?html echo date('Y'); ?> by <span>coding-pandas<br></span><span id="a">Team:-Krunal, Riya, Shivam, Nisarg</span> </div>
+
+    </section>
+    
+</body>
+</html>
